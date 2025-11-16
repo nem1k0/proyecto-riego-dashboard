@@ -3,8 +3,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx' // <--- Esta línea es VITAL
-
-// La línea de index.css fue borrada
+import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

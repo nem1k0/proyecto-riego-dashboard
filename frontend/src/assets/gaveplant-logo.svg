@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260">
+  <defs>
+    <linearGradient id="gpLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8bc34a"/>
+      <stop offset="100%" stop-color="#4caf50"/>
+    </linearGradient>
+    <linearGradient id="gpStem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f9d73"/>
+      <stop offset="100%" stop-color="#0c5d42"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="260" fill="none"/>
+  <g transform="translate(30,10)">
+    <path d="M100 20 C60 70 40 120 40 150 C40 205 80 230 100 230 C120 230 160 205 160 150 C160 120 140 70 100 20Z" fill="url(#gpLeaf)" stroke="#1a7e4e" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M100 230 L100 150" stroke="url(#gpStem)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M100 150 C70 120 70 100 90 80" stroke="#1f9d73" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M100 150 C130 120 130 100 110 80" stroke="#1f9d73" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="88" cy="92" r="8" fill="#e7f4e4" stroke="#1a7e4e" stroke-width="4"/>
+    <circle cx="112" cy="92" r="8" fill="#e7f4e4" stroke="#1a7e4e" stroke-width="4"/>
+    <circle cx="100" cy="150" r="9" fill="#e7f4e4" stroke="#1a7e4e" stroke-width="4"/>
+    <path d="M150 75 C165 60 195 75 195 95 C195 120 165 135 150 120 C160 110 165 102 165 95 C165 87 160 80 150 75Z" fill="#aee3f8" stroke="#3b7c9c" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M190 65 Q210 80 210 100 Q210 120 190 135" stroke="#6aa5c6" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M205 60 Q225 75 225 100 Q225 125 205 140" stroke="#a7c6dd" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
