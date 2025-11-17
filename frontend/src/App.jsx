@@ -11,7 +11,7 @@ import gavePlantLogo from "./assets/gaveplant-logo.svg";
 // --- Datos y configuración ---
 const meses = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
 const POLLING_INTERVAL_MS = 15000;
-const API_URL = "http://44.217.144.6/api";
+const API_URL = "http://44.217.144.6/api"; 
 const palette = {
   forest: "#184d47",
   leaf: "#45b649",
