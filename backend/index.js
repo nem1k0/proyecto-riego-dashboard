@@ -87,11 +87,11 @@ app.get('/api/sensor-data', async (req, res) => {
     
     const connection = pool.promise();
     const timeWindowQuery = `
-      SELECT d.id, d.humedad, d.bomba, d.timestamp
+      SELECT d.id, d.humedad, d.bomba_estado AS bomba, d.fecha AS timestamp
       FROM datos_sensores d
-      JOIN (SELECT MAX(timestamp) AS anchor FROM datos_sensores) meta ON 1=1
-      WHERE d.timestamp BETWEEN DATE_SUB(meta.anchor, INTERVAL ${normalizedRange} HOUR) AND meta.anchor
-      ORDER BY d.timestamp DESC
+      JOIN (SELECT MAX(fecha) AS anchor FROM datos_sensores) meta ON 1=1
+      WHERE d.fecha BETWEEN DATE_SUB(meta.anchor, INTERVAL ${normalizedRange} HOUR) AND meta.anchor
+      ORDER BY d.fecha DESC
     `;
     const [rangeRows] = await connection.query(timeWindowQuery);
 
@@ -100,9 +100,9 @@ app.get('/api/sensor-data', async (req, res) => {
 
     if (!rangeRows.length) {
       const [latestRows] = await connection.query(
-        `SELECT id, humedad, bomba, timestamp
+        `SELECT id, humedad, bomba_estado AS bomba, fecha AS timestamp
          FROM datos_sensores
-         ORDER BY timestamp DESC
+         ORDER BY fecha DESC
          LIMIT 500`
       );
       data = latestRows;
