@@ -1,2 +1,2 @@
 # proyecto-riego-dashboard
-Dashboard de eficiencia de sistema de riego
+Dashboard de eficiencia de sistema de riego automatizado
